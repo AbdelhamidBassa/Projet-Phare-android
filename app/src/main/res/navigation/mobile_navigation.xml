@@ -19,7 +19,12 @@
     <fragment
         android:id="@+id/nav_list"
         android:name="p17.android.nivigationactivity.ui.list.ItemFragment"
-        android:label="fragment_item_list"
+        android:label="@string/menu_item"
         tools:layout="@layout/fragment_item_list" />
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="p17.android.nivigationactivity.ui.info.info"
+        android:label="@string/menu_info"
+        tools:layout="@layout/fragment_info" />
 
 </navigation>
