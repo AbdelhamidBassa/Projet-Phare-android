@@ -16,60 +16,60 @@ public class DummyContent {
     /**
      * An array of sample (dummy) items.
      */
-    public static final List<DummyItem> ITEMS = new ArrayList<DummyItem>();
+    public static final List<PhareItem> ITEMS = new ArrayList<PhareItem>();
 
     /**
      * A map of sample (dummy) items, by ID.
      */
-    public static final Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
+    public static final Map<String, PhareItem> ITEM_MAP = new HashMap<String, PhareItem>();
 
     private static final int COUNT = 25;
 
-    static {
+    public static void loadData() {
         // Add some sample items.
-        for (int i = 1; i <= COUNT; i++) {
+        addItem(new PhareItem("1","Phare de l'Espiguette","PACA"));
+        addItem(new PhareItem("2","Phare du planier","PACA"));
+        /* for (int i = 1; i <= COUNT; i++) {
             addItem(createDummyItem(i));
-        }
+        }*/
     }
 
-    static void loadData() {
-        // add data des phares dans ITEMS
-        // "Phare de l’Espiguette", "PACA", 1869, 27, 3, 15, 24, 1975, 43.485998056, 4.138499446
-        // "Phare du Planier", "Languedoc-Roussillon" , 1959, 66, 1, 5, 23, 1992, 43.198708, 5.229930
-    }
-
-
-    private static void addItem(DummyItem item) {
+    private static void addItem(PhareItem item) {
         ITEMS.add(item);
         ITEM_MAP.put(item.id, item);
     }
 
-    private static DummyItem createDummyItem(int position) {
-        return new DummyItem(String.valueOf(position), "Item " + position, makeDetails(position));
+    private static PhareItem createDummyItem(int position) {
+        return new PhareItem(String.valueOf(position), "Item " + position, makeDetails(position));
     }
 
     private static String makeDetails(int position) {
         StringBuilder builder = new StringBuilder();
         builder.append("Details about Item: ").append(position);
-        for (int i = 0; i < position; i++) {
+       for (int i = 0; i < position; i++) {
             builder.append("\nMore details information here.");
         }
+
         return builder.toString();
     }
+
 
     /**
      * A dummy item representing a piece of content.
      */
-    public static class DummyItem {
+    public static class PhareItem {
         public final String id;
         public final String content;
-        public final String details;
+        public final String region;
 
-        public DummyItem(String id, String content, String details) {
+        public PhareItem(String id, String content, String region) {
             this.id = id;
             this.content = content;
-            this.details = details;
+            this.region = region;
         }
+
+
+
 
         @Override
         public String toString() {

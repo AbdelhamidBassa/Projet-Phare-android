@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="regionFont">
+        <item name='android:textSize'>14sp</item>
+        <item name='android:textColor'>@color/bleu_fr</item>
+        <item name='android:fontFamily'>@font/amaranth</item>
+    </style>
+
+    <style name="anneeFont">
+        <item name='android:textSize'>18sp</item>
+        <item name='android:textColor'>@color/rouge_fr</item>
+        <item name='android:fontFamily'>@font/amaranth</item>
+    </style>
+
+    <style name="hauteurFont" parent = "anneeFont">
+        <item name ='android:textColor'>@color/blanc_fr</item>
+        <item name='android:textSize'>16sp</item>
+    </style>
+
+</resources>

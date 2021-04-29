@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Phare Tracker</string>
+    <string name="hello_blank_fragment">Bonjour</string>
+    <string name="menu_info">A propos</string>
+    <string name="menu_item">Liste des Phares</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="menu_map">Carte</string>
+    <string name="menu_home">Acceuil</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="nav_header_desc">menu de navigation</string>
+    <string name="navigation_drawer_close">fermer l\'outil de nav</string>
+    <string name="navigation_drawer_open">ouvrir l\'outil de nav</string>
+</resources>
